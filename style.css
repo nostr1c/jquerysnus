@@ -1,0 +1,54 @@
+
+h1 {
+    text-align: center;
+    font-size: 1.7vw;
+}
+.playground {
+    width: 50vw;
+    height: 70vh;
+    position: relative;
+    margin: 4vw auto;
+}
+.draggable {
+    z-index: 5;
+    height: 2.6vw;
+    width: 6.25vw;
+    background: url("img/prilla.png") no-repeat;
+    background-size: cover;
+    position: absolute !important;
+}
+.mouth {
+    width: 18.2vw;
+    height: 7.8vw;
+    background-color: #C0392B;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 5vw;
+}
+#dosa {
+    background: url("img/snusdosa.png") no-repeat;
+    background-size: cover;
+    width: 15vw;
+    height: 15vw;
+    margin: 1vw auto;
+    position: relative;
+}
+#dosa-area {
+    position: absolute;
+    top: 2.5vw;
+    left: 2.5vw;
+    width: 10vw;
+    height: 10vw;
+}
+#lock {
+    background: url("img/snuslock-2.png") no-repeat;
+    background-size: cover;
+    width: 15.5vw;
+    height: 15.7vw;
+    position: absolute;
+    left: 17.3vw;
+    top: 2.75vw;
+    z-index: 155;
+}
