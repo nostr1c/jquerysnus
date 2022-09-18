@@ -1,38 +1,42 @@
-
-h1 {
-    text-align: center;
-    font-size: 1.7vw;
-}
 .playground {
     width: 50vw;
     height: 70vh;
     position: relative;
     margin: 4vw auto;
 }
-.draggable {
+.snus-prilla {
     z-index: 5;
     height: 2.6vw;
     width: 6.25vw;
     background: url("img/prilla.png") no-repeat;
     background-size: cover;
     position: absolute !important;
+    cursor: grab;
 }
-.mouth {
+.drop-zone {
+    border: dashed 0.2vw transparent; 
+    background-color: #bfe4ff;
     width: 18.2vw;
     height: 7.8vw;
-    background-color: #C0392B;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 5vw;
+    bottom: 10vw;
+    border-radius: 0.2vw;
+    user-select: none;
+}
+#drop-title {
+    text-align: center;
+    margin-top: 3.2vw;
+    font-size: 1vw;
 }
 #dosa {
     background: url("img/snusdosa.png") no-repeat;
     background-size: cover;
     width: 15vw;
     height: 15vw;
-    margin: 1vw auto;
+    margin: 9vw auto;
     position: relative;
 }
 #dosa-area {
@@ -49,6 +53,7 @@ h1 {
     height: 15.7vw;
     position: absolute;
     left: 17.3vw;
-    top: 2.75vw;
+    top: -0.4vw;
     z-index: 155;
+    cursor: grab;
 }
