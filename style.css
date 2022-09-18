@@ -1,8 +1,13 @@
-.playground {
+html, body {
+    margin: 0; 
+    height: 100%; 
+    overflow: hidden
+}
+#wrapper {
     width: 50vw;
-    height: 70vh;
+    height: 30vw;
     position: relative;
-    margin: 4vw auto;
+    margin: 7vw auto;
 }
 .snus-prilla {
     z-index: 5;
@@ -22,7 +27,7 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 10vw;
+    bottom: 3vw;
     border-radius: 0.2vw;
     user-select: none;
 }
@@ -36,7 +41,7 @@
     background-size: cover;
     width: 15vw;
     height: 15vw;
-    margin: 9vw auto;
+    margin: 0vw auto;
     position: relative;
 }
 #dosa-area {
