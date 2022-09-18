@@ -22,7 +22,7 @@ $(document).ready(function() {
     $('.snus-prilla').on('mousedown', function() {
         $(".drop-zone").css("border", "0.2vw dashed #aaa");
         selectedSnus = $(':hover').last().attr('id');
-        console.log(`Current Snus ID is now: ${selectedSnus}`);
+        //console.log(`Current Snus ID is now: ${selectedSnus}`);
     });
 
     $('.snus-prilla').on('mouseup', function() {
@@ -47,19 +47,19 @@ $(document).ready(function() {
             insideSafeZone = "false";
         },
         onEnd: function() {
-            console.log(`insideSafeZone: ${insideSafeZone}`);
+            //console.log(`insideSafeZone: ${insideSafeZone}`);
             if(insideSafeZone == "true") {
                 prillaAmount--;
                 $(`#${selectedSnus}`).remove();
                 $(".drop-zone").css("background", "#bfe4ff")
                 .css("color", "black");
                 $("#drop-title").html("Drag snus");
-                console.log(`Removed ${selectedSnus}`);
-                console.log(`Snus left: ${prillaAmount}`);
+                //console.log(`Removed ${selectedSnus}`);
+                //console.log(`Snus left: ${prillaAmount}`);
             } else {
                 $(".drop-zone").css("border", "dashed 0.2vw transparent")
-                console.log(`${selectedSnus} was not removed`)
-                console.log(`Snus left: ${prillaAmount}`);
+                //console.log(`${selectedSnus} was not removed`)
+                //console.log(`Snus left: ${prillaAmount}`);
             }
         }
       }, {
